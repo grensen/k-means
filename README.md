@@ -24,7 +24,7 @@ Now let's see what happens when we distribute only the first 100 examples to onl
   <img src="https://github.com/grensen/k-means/blob/main/figures/k-means_demo_02.png?raw=true">
 </p>
 
-With more examples, the picture becomes increasingly solid and all test settings ultimately lead to the same result. This is a pretty good sign to start the big tests, hoping that with even more images and less aggressive settings, fast and good results can be expected.
+With more examples, the picture becomes increasingly solid and all test settings lead to almost the same result. This is a pretty good sign to start the big tests, hoping that with even more images and less aggressive settings, fast and good results can be expected.
 
 ## K = 2
 
@@ -82,7 +82,7 @@ With more examples, the picture becomes increasingly solid and all test settings
 
 ---
 
-Why all this? My goal is to specialize different neural networks to make better predictions. Whether this will work is not entirely certain, but it looks good.
+Why all this? My ultimate goal is not cluster the samples, instead it seems a good idea to take the error cases of a well-trained neural network to cluster them. This way, specialized neural networks can be trained to make better predictions. Whether this will work is not entirely sure, but it looks promising.
 
 ### [K-Means++ Implementation](https://visualstudiomagazine.com/Articles/2020/05/06/data-clustering-k-means.aspx?Page=1)
 
