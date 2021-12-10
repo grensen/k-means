@@ -91,7 +91,15 @@ Why all this? My ultimate goal is not cluster the samples, instead it seems a go
 
 And this is roughly what it looks like. The red cluster contains the predicted examples that are "reliable". The green and blue clusters contain the special cases where the general network is not sure. By clustering the problem case, the problem example is then passed to the specialized network which is trained for that cluster. 
 
-But all this is still a lot of work, first the problem cases have to be trained by the specialized networks, then the respective cluster of the error cases has to be stored. After all this, the general network must be put in front of the system and everything must work together correctly. But then hopefully a correct prediction will be made. We will see...
+<p align="center">
+  <img src="https://github.com/grensen/k-means/blob/main/figures/errorCases_MaxErrorCasesK10_03?raw=true">
+</p>
+
+And this is how it looks when the examples become even more extreme and are distributed in even more clusters. Good as an extreme example, but probably bad because too few examples are spread over too many clusters.
+
+But all this is still a lot of work, first the problem cases have to be trained by the specialized networks, then the respective cluster of the error cases has to be stored. After all this, the general network must be put in front of the system and everything must work together correctly. 
+
+It's not yet clear to me exactly how such a system should be structured, as there are countless choices as to how the whole thing could be implemented. But then hopefully a correct prediction will be made. We will see...
 
 ### [K-Means++ Implementation](https://visualstudiomagazine.com/Articles/2020/05/06/data-clustering-k-means.aspx?Page=1)
 
