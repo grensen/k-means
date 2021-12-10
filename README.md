@@ -92,7 +92,7 @@ Why all this? My ultimate goal is not cluster the samples, instead it seems a go
 And this is roughly what it looks like. The red cluster contains the predicted examples that are "reliable". The green and blue clusters contain the special cases where the general network is not sure. By clustering the problem case, the problem example is then passed to the specialized network which is trained for that cluster. 
 
 <p align="center">
-  <img src="https://github.com/grensen/k-means/blob/main/figures/errorCases_MaxErrorCasesK10_03?raw=true">
+  <img src="https://github.com/grensen/k-means/blob/main/figures/errorCases_MaxErrorCasesK10_03.png?raw=true">
 </p>
 
 And this is how it looks when the examples become even more extreme and are distributed in even more clusters. Good as an extreme example, but probably bad because too few examples are spread over too many clusters.
